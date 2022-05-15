@@ -38,7 +38,7 @@ $query2="UPDATE animal SET name='Bear', age='2',color='black',sound='growl',gend
 //select
 $query4="SELECT * FROM animal";
 $res = mysqli_query($conn,$query4);
-echo('<table border="1">
+echo('<table border="2">
     <tr>
       <th>ID</th>
       <th>Name</th>
