@@ -38,7 +38,7 @@ $query2="UPDATE animal SET name='Bear', age='2',color='black',sound='growl',gend
 //select
 $query4="SELECT * FROM animal";
 $res = mysqli_query($conn,$query4);
-echo('<table border="2">
+echo'<table border="2">
     <tr>
       <th>ID</th>
       <th>Name</th>
@@ -46,7 +46,7 @@ echo('<table border="2">
       <th>Color</th>
       <th>Sound</th>
       <th>Gender</th>
-    </tr>');  
+    </tr>';  
   if ($res) {
     while($i= mysqli_fetch_array($res)) {
       echo "<tr><td>".$i["id"]."</td><td>".$i["name"].
